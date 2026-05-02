@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📦 InventoRIS — Sistem Manajemen Inventaris
 
 > Mini Project Pemrograman Visual (PV26)  
@@ -136,3 +137,7 @@ python main.py
 - Baris berwarna **kuning** menandakan stok barang di bawah 5 unit
 - Double-click pada baris tabel untuk langsung membuka dialog edit
 - Shortcut keyboard: `Ctrl+N` (Tambah), `Ctrl+E` (Edit), `Delete` (Hapus), `F5` (Refresh)
+=======
+# pv26-miniproject--ManajemenInventoris---F1D02310071-
+MiniProject PemrogramanVisual
+>>>>>>> f64004b6784b2bc0e272e02fff0bdb2a0cc6d957
