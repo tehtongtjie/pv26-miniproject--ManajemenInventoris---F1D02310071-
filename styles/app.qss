@@ -1,0 +1,403 @@
+/* ============================================================
+   InventoRIS - Application Theme
+   Fokus: konsisten, kontras jelas, dan nyaman dipakai di desktop.
+   ============================================================ */
+
+* {
+    font-family: "Segoe UI", "Inter", "Roboto", "Arial", sans-serif;
+    font-size: 13px;
+    color: #172033;
+}
+
+QMainWindow,
+QDialog {
+    background-color: #f4f7fb;
+}
+
+QToolTip {
+    background-color: #172033;
+    color: #ffffff;
+    border: 1px solid #2d3f59;
+    border-radius: 4px;
+    padding: 6px 8px;
+}
+
+/* Menu */
+QMenuBar {
+    background-color: #17324d;
+    border-bottom: 1px solid #102438;
+    padding: 2px 8px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    color: #eef6ff;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+QMenuBar::item:selected,
+QMenuBar::item:pressed {
+    background-color: #224c73;
+    color: #ffffff;
+}
+
+QMenu {
+    background-color: #ffffff;
+    border: 1px solid #d4deea;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+QMenu::separator {
+    height: 1px;
+    background-color: #e5ebf3;
+    margin: 6px 4px;
+}
+
+QMenu::item {
+    color: #172033;
+    padding: 8px 28px 8px 16px;
+    border-radius: 5px;
+}
+
+QMenu::item:selected {
+    background-color: #e8f2ff;
+    color: #123a5b;
+}
+
+/* Header */
+#headerFrame {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #17324d,
+        stop: 1 #1f6f5b
+    );
+    border: none;
+}
+
+#appTitle {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+#dialogTitle {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#infoMahasiswa {
+    background-color: rgba(255, 255, 255, 28);
+    border: 1px solid rgba(255, 255, 255, 48);
+    border-radius: 8px;
+}
+
+#labelNama,
+#labelNIM {
+    color: #f5fbff;
+    font-weight: 600;
+}
+
+/* Statistik */
+#statistikFrame {
+    background-color: #eef3f8;
+    border-bottom: 1px solid #d5e0eb;
+}
+
+#kartuBiru,
+#kartuHijau,
+#kartuOranye,
+#kartuUngu {
+    border-radius: 8px;
+    min-width: 160px;
+    border: 1px solid rgba(255, 255, 255, 55);
+}
+
+#kartuBiru {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #2f80c7, stop: 1 #20527f);
+}
+
+#kartuHijau {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #2f9b73, stop: 1 #1f684d);
+}
+
+#kartuOranye {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #d67931, stop: 1 #944b20);
+}
+
+#kartuUngu {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #7862c9, stop: 1 #51408f);
+}
+
+#kartuNilai {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+#kartuLabel {
+    color: #edf6ff;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Toolbar */
+#toolbarFrame {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dce5ef;
+}
+
+/* Form controls */
+QLineEdit,
+QTextEdit,
+QSpinBox,
+QDoubleSpinBox,
+QComboBox,
+QDateEdit {
+    background-color: #ffffff;
+    color: #172033;
+    border: 1px solid #cfd9e5;
+    border-radius: 6px;
+    padding: 7px 9px;
+    selection-background-color: #2f80c7;
+    selection-color: #ffffff;
+}
+
+QTextEdit {
+    padding: 8px;
+}
+
+QLineEdit:focus,
+QTextEdit:focus,
+QSpinBox:focus,
+QDoubleSpinBox:focus,
+QComboBox:focus,
+QDateEdit:focus {
+    border: 1px solid #2f80c7;
+    background-color: #fbfdff;
+}
+
+QLineEdit:disabled,
+QTextEdit:disabled,
+QSpinBox:disabled,
+QDoubleSpinBox:disabled,
+QComboBox:disabled,
+QDateEdit:disabled {
+    background-color: #edf1f5;
+    color: #748093;
+    border-color: #d8e0e8;
+}
+
+#inputCari {
+    min-height: 36px;
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+QComboBox::drop-down,
+QDateEdit::drop-down,
+QSpinBox::up-button,
+QSpinBox::down-button,
+QDoubleSpinBox::up-button,
+QDoubleSpinBox::down-button {
+    border: none;
+    width: 24px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    border: 1px solid #cfd9e5;
+    selection-background-color: #e8f2ff;
+    selection-color: #123a5b;
+    outline: 0;
+}
+
+QLabel {
+    color: #253247;
+}
+
+#labelWajib {
+    color: #a0491c;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #2f80c7;
+    color: #ffffff;
+    border: 1px solid #276da9;
+    border-radius: 6px;
+    padding: 8px 16px;
+    min-height: 18px;
+    font-weight: 700;
+}
+
+QPushButton:hover {
+    background-color: #286fac;
+    border-color: #205f96;
+}
+
+QPushButton:pressed {
+    background-color: #205f96;
+}
+
+QPushButton:disabled {
+    background-color: #cbd5e1;
+    color: #6b7788;
+    border-color: #c1ccd9;
+}
+
+#btnTambah {
+    background-color: #21865f;
+    border-color: #1b704f;
+}
+
+#btnTambah:hover {
+    background-color: #1b704f;
+}
+
+#btnEdit {
+    background-color: #c96d23;
+    border-color: #aa591a;
+}
+
+#btnEdit:hover {
+    background-color: #aa591a;
+}
+
+#btnHapus {
+    background-color: #c0392b;
+    border-color: #9f2f24;
+}
+
+#btnHapus:hover {
+    background-color: #9f2f24;
+}
+
+QDialogButtonBox QPushButton {
+    min-width: 92px;
+}
+
+QDialogButtonBox QPushButton[text="Batal"] {
+    background-color: #eef2f6;
+    color: #253247;
+    border-color: #cfd9e5;
+}
+
+QDialogButtonBox QPushButton[text="Batal"]:hover {
+    background-color: #e0e7ef;
+}
+
+/* Table */
+#tabelBarang {
+    background-color: #ffffff;
+    alternate-background-color: #f7fafc;
+    color: #172033;
+    gridline-color: #e5ebf3;
+    border: none;
+    selection-background-color: #dbeafe;
+    selection-color: #102438;
+    outline: 0;
+}
+
+#tabelBarang::item {
+    padding: 7px 8px;
+    border-bottom: 1px solid #edf2f7;
+}
+
+#tabelBarang::item:selected {
+    background-color: #dbeafe;
+    color: #102438;
+}
+
+#tabelBarang QHeaderView::section {
+    background-color: #17324d;
+    color: #ffffff;
+    padding: 10px 8px;
+    font-weight: 700;
+    border: none;
+    border-right: 1px solid #284964;
+}
+
+#tabelBarang QTableCornerButton::section {
+    background-color: #17324d;
+    border: none;
+}
+
+QHeaderView::section:vertical {
+    background-color: #f1f5f9;
+    border: none;
+}
+
+/* Scrollbar */
+QScrollBar:vertical {
+    background: #edf2f7;
+    width: 12px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #b8c4d1;
+    border-radius: 6px;
+    min-height: 32px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #98a8ba;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical,
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    height: 0;
+    background: none;
+}
+
+QScrollBar:horizontal {
+    background: #edf2f7;
+    height: 12px;
+    margin: 0;
+}
+
+QScrollBar::handle:horizontal {
+    background: #b8c4d1;
+    border-radius: 6px;
+    min-width: 32px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #98a8ba;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal,
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    width: 0;
+    background: none;
+}
+
+/* Status bar */
+QStatusBar {
+    background-color: #17324d;
+    color: #eef6ff;
+    border-top: 1px solid #102438;
+}
+
+QStatusBar QLabel {
+    color: #eef6ff;
+    padding-left: 8px;
+}
+
+/* Message boxes inherit the same controls but need a neutral body. */
+QMessageBox {
+    background-color: #ffffff;
+}
+
+QMessageBox QLabel {
+    color: #172033;
+}
