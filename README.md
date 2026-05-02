@@ -128,7 +128,7 @@ python main.py
 
 ## 🎥 Video Demo
 
-[Link YouTube — akan diisi setelah upload]
+(https://youtu.be/r09JC86w-u4?si=3uecfdiLZhdpsiCN)
 
 ---
 
